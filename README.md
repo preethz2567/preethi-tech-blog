@@ -1,4 +1,4 @@
-# 🚀 System Design Blog & CI/CD Sandbox
+# 🖧 System Design Blog & CI/CD Sandbox
 
 This project serves a dual purpose: primarily, it was built as a **sandbox for exploring and implementing CI/CD workflows** using GitHub Actions. Secondarily, it functions as a **mini tech-blog** documenting fundamental System Design concepts I've learned.
 
@@ -54,8 +54,9 @@ To give the CI/CD pipeline a real-world application to build, I created a respon
 
 ## Glimpse of it
 
-<img width="1877" height="1036" alt="Screenshot 2026-06-28 180830" src="https://github.com/user-attachments/assets/208003f4-0b04-498e-9beb-5229a57986c6" />
-<img width="1877" height="1036" alt="Screenshot 2026-06-28 180830" src="https://github.com/user-attachments/assets/d77bea8b-7762-451e-ae55-47530baed322" />
+<img width="1878" height="1080" alt="Screenshot 2026-06-28 181950" src="https://github.com/user-attachments/assets/1f45a2a0-05f7-48e5-9091-a16c30f866bc" />
+
+<img width="1877" height="1030" alt="Screenshot 2026-06-28 180830" src="https://github.com/user-attachments/assets/d77bea8b-7762-451e-ae55-47530baed322" />
 
 
 ## 🛠️ Local Development
