@@ -16,18 +16,18 @@ The workflow is defined in [`.github/workflows/ci.yml`](./.github/workflows/ci.y
 
 This ensures that no broken code, failing builds, or TypeScript errors can be merged into the main branch.
 
-## 📖 The Tech Blog (Application Code)
+##  The Tech Blog (Application Code)
 
 To give the CI/CD pipeline a real-world application to build, I created a responsive, editorial-style tech blog covering backend engineering and system design topics. 
 
 ### Featured Topics
-- 🌐 **Load Balancing** (Layer 4 vs Layer 7, Round Robin)
-- ⚡ **Caching** (Redis, Cache aside, Write-through)
-- ⚖️ **CAP Theorem** (Consistency, Availability, Partition Tolerance)
-- 🗄️ **Database Sharding** (Horizontal partitioning, Shard keys)
-- 🏗️ **Microservices vs Monolithic Architecture**
-- 📬 **Message Queues** (Asynchronous decoupling, Pub/Sub)
-- 🚦 **Rate Limiting** (Token Bucket, Leaky Bucket algorithms)
+-  **Load Balancing** (Layer 4 vs Layer 7, Round Robin)
+-  **Caching** (Redis, Cache aside, Write-through)
+-  **CAP Theorem** (Consistency, Availability, Partition Tolerance)
+-  **Database Sharding** (Horizontal partitioning, Shard keys)
+-  **Microservices vs Monolithic Architecture**
+-  **Message Queues** (Asynchronous decoupling, Pub/Sub)
+-  **Rate Limiting** (Token Bucket, Leaky Bucket algorithms)
 
 ### Tech Stack
 - **Frontend**: React + TypeScript
@@ -54,9 +54,8 @@ To give the CI/CD pipeline a real-world application to build, I created a respon
 
 ## Glimpse of it
 
-![alt text](image.png)
-![alt text](image-1.png)
-![alt text](image-2.png)
+<img width="1877" height="1036" alt="Screenshot 2026-06-28 180830" src="https://github.com/user-attachments/assets/208003f4-0b04-498e-9beb-5229a57986c6" />
+<img width="1877" height="1036" alt="Screenshot 2026-06-28 180830" src="https://github.com/user-attachments/assets/d77bea8b-7762-451e-ae55-47530baed322" />
 
 
 ## 🛠️ Local Development
@@ -74,6 +73,9 @@ If you'd like to run the tech blog locally:
 3. Install dependencies:
    ```bash
    npm install
+
+
+   Thankyou for visiting this repository!!
    ```
 4. Start the Vite development server:
    ```bash
