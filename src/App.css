@@ -3,9 +3,6 @@
   min-height: 100vh;
 }
 
-/* ═══════════════════════════════════════
-   SIDEBAR — Chapter navigation
-   ═══════════════════════════════════════ */
 .sidebar {
   width: 300px;
   flex-shrink: 0;
@@ -102,9 +99,6 @@
   font-weight: 700;
 }
 
-/* ═══════════════════════════════════════
-   MAIN CONTENT
-   ═══════════════════════════════════════ */
 .content {
   flex: 1;
   padding: 4rem 0;
@@ -112,14 +106,11 @@
   margin: 0 auto;
 }
 
-/* ═══════════════════════════════════════
-   ARTICLE — Editorial Style
-   ═══════════════════════════════════════ */
+
 article {
   padding: 0 2rem;
 }
 
-/* Meta tag above title */
 article .article-meta {
   display: inline-block;
   font-family: var(--sans);
@@ -132,7 +123,6 @@ article .article-meta {
   margin-bottom: 1.25rem;
 }
 
-/* Main title — big editorial serif */
 article h1 {
   font-family: var(--serif);
   font-size: 3rem;
@@ -143,7 +133,6 @@ article h1 {
   margin-bottom: 1.5rem;
 }
 
-/* Subtitle / lead paragraph */
 article .lead {
   font-family: var(--sans);
   font-size: 1.3rem;
@@ -155,7 +144,6 @@ article .lead {
   border-bottom: 1px solid var(--border);
 }
 
-/* Section headings */
 article h2 {
   font-family: var(--serif);
   font-size: 1.75rem;
@@ -167,7 +155,6 @@ article h2 {
   margin-bottom: 1rem;
 }
 
-/* Body paragraphs */
 article p {
   font-family: var(--sans);
   font-size: 1.1rem;
@@ -181,7 +168,6 @@ article strong {
   font-weight: 600;
 }
 
-/* Inline code */
 article code {
   font-family: var(--mono);
   font-size: 0.9em;
@@ -191,7 +177,6 @@ article code {
   color: var(--accent);
 }
 
-/* Pull quote / callout */
 article .callout {
   font-family: var(--serif);
   font-style: italic;
@@ -203,9 +188,7 @@ article .callout {
   margin: 2.5rem 0;
 }
 
-/* ═══════════════════════════════════════
-   IMAGES — contextual, auto-width
-   ═══════════════════════════════════════ */
+
 article figure {
   margin: 2.5rem 0;
   text-align: center;
@@ -226,7 +209,6 @@ article figure figcaption {
   font-style: italic;
 }
 
-/* Old hero-image class — backwards compat, now auto-sized */
 article .hero-image {
   max-width: 100%;
   height: auto;
@@ -235,7 +217,6 @@ article .hero-image {
   margin-bottom: 2rem;
 }
 
-/* Section divider */
 article .divider {
   width: 40px;
   height: 2px;
@@ -244,9 +225,7 @@ article .divider {
   border: none;
 }
 
-/* ═══════════════════════════════════════
-   RESPONSIVE
-   ═══════════════════════════════════════ */
+
 @media (max-width: 1024px) {
   .content {
     padding: 3rem 0;
