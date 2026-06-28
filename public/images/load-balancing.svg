@@ -1,0 +1,147 @@
+<svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8faff" />
+      <stop offset="100%" stop-color="#e0e8f5" />
+    </linearGradient>
+
+    <!-- Arrowhead Marker -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="800" fill="url(#bg)" />
+
+  <!-- Title Pill -->
+  <rect x="180" y="40" width="440" height="80" rx="40" fill="#2970ff" />
+  <text x="400" y="93" font-family="sans-serif" font-size="44" font-weight="bold" fill="white" text-anchor="middle">Load Balancing</text>
+
+  <!-- CLIENTS (Left) -->
+  <g transform="translate(100, 260)" fill="none" stroke="black" stroke-width="2">
+    <!-- Desktop -->
+    <rect x="0" y="0" width="60" height="40" rx="2" />
+    <line x1="15" y1="20" x2="25" y2="20" />
+    <line x1="30" y1="20" x2="45" y2="20" />
+    <line x1="30" y1="40" x2="30" y2="55" />
+    <line x1="15" y1="55" x2="45" y2="55" />
+  </g>
+
+  <g transform="translate(115, 360)" fill="none" stroke="black" stroke-width="2">
+    <!-- Mobile -->
+    <rect x="0" y="0" width="30" height="50" rx="2" />
+    <line x1="10" y1="42" x2="20" y2="42" />
+  </g>
+
+  <g transform="translate(105, 460)" fill="none" stroke="black" stroke-width="2">
+    <!-- Document/Tablet -->
+    <rect x="0" y="0" width="45" height="55" />
+    <line x1="10" y1="15" x2="35" y2="15" />
+    <line x1="10" y1="25" x2="30" y2="25" />
+    <line x1="10" y1="35" x2="20" y2="35" />
+  </g>
+
+  <text x="130" y="560" font-family="sans-serif" font-size="22" fill="black" text-anchor="middle">Client</text>
+
+  <!-- INTERNET CLOUD (Center-Left) -->
+  <g transform="translate(270, 360)">
+    <path d="M 30 50 A 25 25 0 0 1 30 10 A 35 35 0 0 1 80 15 A 25 25 0 0 1 80 50 Z" fill="#a3daff" transform="scale(1.2)" />
+    <text x="65" y="90" font-family="sans-serif" font-size="22" fill="black" text-anchor="middle">Internet</text>
+  </g>
+
+  <!-- LOAD BALANCER (Center-Right) -->
+  <g transform="translate(450, 350)">
+    <rect x="0" y="0" width="75" height="75" rx="8" fill="#2970ff" />
+    <circle cx="28" cy="37.5" r="9" fill="white" />
+    <circle cx="55" cy="22" r="5.5" fill="white" />
+    <circle cx="55" cy="37.5" r="5.5" fill="white" />
+    <circle cx="55" cy="53" r="5.5" fill="white" />
+    <line x1="10" y1="37.5" x2="19" y2="37.5" stroke="white" stroke-width="2" />
+    <line x1="37" y1="37.5" x2="49.5" y2="22" stroke="white" stroke-width="2" />
+    <line x1="37" y1="37.5" x2="49.5" y2="37.5" stroke="white" stroke-width="2" />
+    <line x1="37" y1="37.5" x2="49.5" y2="53" stroke="white" stroke-width="2" />
+    <text x="37.5" y="100" font-family="sans-serif" font-size="22" fill="black" text-anchor="middle">Load Balancer</text>
+  </g>
+
+  <!-- SERVERS (Right) -->
+  <!-- Rack 1 -->
+  <g transform="translate(660, 260)">
+    <rect x="0" y="0" width="70" height="75" fill="#173559" rx="2" />
+    <line x1="0" y1="25" x2="70" y2="25" stroke="#f8faff" stroke-width="2" />
+    <line x1="0" y1="50" x2="70" y2="50" stroke="#f8faff" stroke-width="2" />
+    
+    <circle cx="12" cy="12.5" r="3" fill="#a3daff" />
+    <line x1="50" y1="10" x2="65" y2="10" stroke="white" stroke-width="2" />
+    <line x1="50" y1="15" x2="65" y2="15" stroke="white" stroke-width="2" />
+
+    <circle cx="12" cy="37.5" r="3" fill="#a3daff" />
+    <line x1="50" y1="35" x2="65" y2="35" stroke="white" stroke-width="2" />
+    <line x1="50" y1="40" x2="65" y2="40" stroke="white" stroke-width="2" />
+
+    <circle cx="12" cy="62.5" r="3" fill="#a3daff" />
+    <line x1="50" y1="60" x2="65" y2="60" stroke="white" stroke-width="2" />
+    <line x1="50" y1="65" x2="65" y2="65" stroke="white" stroke-width="2" />
+  </g>
+
+  <!-- Rack 2 -->
+  <g transform="translate(660, 355)">
+    <rect x="0" y="0" width="70" height="75" fill="#173559" rx="2" />
+    <line x1="0" y1="25" x2="70" y2="25" stroke="#f8faff" stroke-width="2" />
+    <line x1="0" y1="50" x2="70" y2="50" stroke="#f8faff" stroke-width="2" />
+    
+    <circle cx="12" cy="12.5" r="3" fill="#a3daff" />
+    <line x1="50" y1="10" x2="65" y2="10" stroke="white" stroke-width="2" />
+    <line x1="50" y1="15" x2="65" y2="15" stroke="white" stroke-width="2" />
+
+    <circle cx="12" cy="37.5" r="3" fill="#a3daff" />
+    <line x1="50" y1="35" x2="65" y2="35" stroke="white" stroke-width="2" />
+    <line x1="50" y1="40" x2="65" y2="40" stroke="white" stroke-width="2" />
+
+    <circle cx="12" cy="62.5" r="3" fill="#a3daff" />
+    <line x1="50" y1="60" x2="65" y2="60" stroke="white" stroke-width="2" />
+    <line x1="50" y1="65" x2="65" y2="65" stroke="white" stroke-width="2" />
+  </g>
+
+  <!-- Rack 3 -->
+  <g transform="translate(660, 450)">
+    <rect x="0" y="0" width="70" height="75" fill="#173559" rx="2" />
+    <line x1="0" y1="25" x2="70" y2="25" stroke="#f8faff" stroke-width="2" />
+    <line x1="0" y1="50" x2="70" y2="50" stroke="#f8faff" stroke-width="2" />
+    
+    <circle cx="12" cy="12.5" r="3" fill="#a3daff" />
+    <line x1="50" y1="10" x2="65" y2="10" stroke="white" stroke-width="2" />
+    <line x1="50" y1="15" x2="65" y2="15" stroke="white" stroke-width="2" />
+
+    <circle cx="12" cy="37.5" r="3" fill="#a3daff" />
+    <line x1="50" y1="35" x2="65" y2="35" stroke="white" stroke-width="2" />
+    <line x1="50" y1="40" x2="65" y2="40" stroke="white" stroke-width="2" />
+
+    <circle cx="12" cy="62.5" r="3" fill="#a3daff" />
+    <line x1="50" y1="60" x2="65" y2="60" stroke="white" stroke-width="2" />
+    <line x1="50" y1="65" x2="65" y2="65" stroke="white" stroke-width="2" />
+  </g>
+
+  <text x="695" y="560" font-family="sans-serif" font-size="22" fill="black" text-anchor="middle">Servers</text>
+
+  <!-- CONNECTING LINES (Dashed) -->
+  <g fill="none" stroke="black" stroke-width="2.5" stroke-dasharray="10, 8">
+    <!-- Desktop to Cloud -->
+    <path d="M 170 280 L 295 280 L 295 345" marker-end="url(#arrow)" />
+    <!-- Mobile to Cloud -->
+    <path d="M 155 385 L 260 385" marker-end="url(#arrow)" />
+    <!-- Document to Cloud -->
+    <path d="M 160 490 L 295 490 L 295 435" marker-end="url(#arrow)" />
+
+    <!-- Cloud to LB -->
+    <path d="M 390 385 L 435 385" marker-end="url(#arrow)" />
+
+    <!-- LB to Rack 1 -->
+    <path d="M 480 340 L 480 180 L 695 180 L 695 245" marker-end="url(#arrow)" />
+    <!-- LB to Rack 2 -->
+    <path d="M 535 385 L 645 385" marker-end="url(#arrow)" />
+    <!-- LB to Rack 3 -->
+    <path d="M 480 435 L 480 650 L 695 650 L 695 540" marker-end="url(#arrow)" />
+  </g>
+</svg>

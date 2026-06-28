@@ -1,0 +1,109 @@
+<svg viewBox="0 0 850 600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f4f6fa" />
+
+  <defs>
+    <!-- Cubes -->
+    <g id="cube-white">
+      <path d="M 0 0 L 50 25 L 0 50 L -50 25 Z" fill="#ffffff" stroke="#333" stroke-width="1.5" stroke-linejoin="round"/>
+      <path d="M -50 25 L 0 50 L 0 110 L -50 85 Z" fill="#f4f5f9" stroke="#333" stroke-width="1.5" stroke-linejoin="round"/>
+      <path d="M 0 50 L 50 25 L 50 85 L 0 110 Z" fill="#e8eaf2" stroke="#333" stroke-width="1.5" stroke-linejoin="round"/>
+    </g>
+    <g id="cube-blue">
+      <path d="M 0 0 L 50 25 L 0 50 L -50 25 Z" fill="#2970ff" stroke="#333" stroke-width="1.5" stroke-linejoin="round"/>
+      <path d="M -50 25 L 0 50 L 0 110 L -50 85 Z" fill="#1a50c7" stroke="#333" stroke-width="1.5" stroke-linejoin="round"/>
+      <path d="M 0 50 L 50 25 L 50 85 L 0 110 Z" fill="#0f358f" stroke="#333" stroke-width="1.5" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Slices -->
+    <g id="slice-green">
+      <path d="M 0 0 L 30 15 L -10 35 L -40 20 Z" fill="#2eb560" stroke="#333" stroke-width="1.5" stroke-linejoin="round"/>
+      <path d="M -40 20 L -10 35 L -10 75 L -40 60 Z" fill="#228c49" stroke="#333" stroke-width="1.5" stroke-linejoin="round"/>
+      <path d="M -10 35 L 30 15 L 30 55 L -10 75 Z" fill="#1b6e39" stroke="#333" stroke-width="1.5" stroke-linejoin="round"/>
+    </g>
+    <g id="slice-white">
+      <path d="M 0 0 L 30 15 L -10 35 L -40 20 Z" fill="#ffffff" stroke="#333" stroke-width="1.5" stroke-linejoin="round"/>
+      <path d="M -40 20 L -10 35 L -10 75 L -40 60 Z" fill="#f4f5f9" stroke="#333" stroke-width="1.5" stroke-linejoin="round"/>
+      <path d="M -10 35 L 30 15 L 30 55 L -10 75 Z" fill="#e8eaf2" stroke="#333" stroke-width="1.5" stroke-linejoin="round"/>
+    </g>
+    <g id="slice-blue">
+      <path d="M 0 0 L 30 15 L -10 35 L -40 20 Z" fill="#2970ff" stroke="#333" stroke-width="1.5" stroke-linejoin="round"/>
+      <path d="M -40 20 L -10 35 L -10 75 L -40 60 Z" fill="#1a50c7" stroke="#333" stroke-width="1.5" stroke-linejoin="round"/>
+      <path d="M -10 35 L 30 15 L 30 55 L -10 75 Z" fill="#0f358f" stroke="#333" stroke-width="1.5" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Horizontal Discs (Flying) -->
+    <g id="disc-h-blue">
+      <ellipse cx="0" cy="3" rx="14" ry="6" fill="#1a50c7" />
+      <ellipse cx="0" cy="0" rx="14" ry="6" fill="#2970ff" stroke="#333" stroke-width="1.5" />
+    </g>
+    <g id="disc-h-yellow">
+      <ellipse cx="0" cy="3" rx="14" ry="6" fill="#d9aa2e" />
+      <ellipse cx="0" cy="0" rx="14" ry="6" fill="#f7c948" stroke="#333" stroke-width="1.5" />
+    </g>
+    <g id="disc-h-green">
+      <ellipse cx="0" cy="3" rx="14" ry="6" fill="#228c49" />
+      <ellipse cx="0" cy="0" rx="14" ry="6" fill="#2eb560" stroke="#333" stroke-width="1.5" />
+    </g>
+
+    <!-- Vertical Discs (In Queue) -->
+    <g id="disc-v-blue">
+      <ellipse cx="1" cy="0" rx="6" ry="12" fill="#1a50c7" />
+      <ellipse cx="0" cy="0" rx="6" ry="12" fill="#2970ff" stroke="#333" stroke-width="1.5" />
+    </g>
+    <g id="disc-v-yellow">
+      <ellipse cx="1" cy="0" rx="6" ry="12" fill="#d9aa2e" />
+      <ellipse cx="0" cy="0" rx="6" ry="12" fill="#f7c948" stroke="#333" stroke-width="1.5" />
+    </g>
+    <g id="disc-v-green">
+      <ellipse cx="1" cy="0" rx="6" ry="12" fill="#228c49" />
+      <ellipse cx="0" cy="0" rx="6" ry="12" fill="#2eb560" stroke="#333" stroke-width="1.5" />
+    </g>
+  </defs>
+
+  <!-- Dashed Lines -->
+  <g fill="none" stroke="#333" stroke-width="2" stroke-dasharray="6, 6">
+    <!-- Producers to Queue -->
+    <path d="M 225 205 L 355 325" />
+    <path d="M 225 325 L 355 325" />
+    <path d="M 225 445 L 355 325" />
+    <!-- Queue to Consumers -->
+    <path d="M 540 400 L 625 275" />
+    <path d="M 540 400 L 625 395" />
+  </g>
+
+  <!-- Producers -->
+  <use href="#cube-white" x="200" y="150" />
+  <use href="#cube-white" x="200" y="270" />
+  <use href="#cube-white" x="200" y="390" />
+
+  <!-- Consumers -->
+  <use href="#cube-blue" x="650" y="220" />
+  <use href="#cube-blue" x="650" y="340" />
+
+  <!-- Queue Slices -->
+  <!-- Queue origin: 380, 280 -->
+  <use href="#slice-green" x="380" y="280" />
+  <use href="#slice-white" x="410" y="295" />
+  <use href="#slice-white" x="440" y="310" />
+  <use href="#slice-white" x="470" y="325" />
+  <use href="#slice-white" x="500" y="340" />
+  <use href="#slice-blue"  x="530" y="355" />
+
+  <!-- Discs In Queue -->
+  <use href="#disc-v-blue" x="405" y="312.5" />
+  <use href="#disc-v-yellow" x="435" y="327.5" />
+  <use href="#disc-v-green" x="465" y="342.5" />
+  <use href="#disc-v-blue" x="495" y="357.5" />
+
+  <!-- Flying Discs -->
+  <use href="#disc-h-blue" x="290" y="265" />
+  <use href="#disc-h-yellow" x="290" y="325" />
+  <use href="#disc-h-green" x="290" y="385" />
+  <use href="#disc-h-yellow" x="582" y="337" />
+  <use href="#disc-h-blue" x="582" y="397" />
+
+  <!-- Labels -->
+  <text x="200" y="550" font-family="sans-serif" font-size="22" font-weight="bold" fill="#000" text-anchor="middle">Producers</text>
+  <text x="455" y="550" font-family="sans-serif" font-size="22" font-weight="bold" fill="#000" text-anchor="middle">Message Queue</text>
+  <text x="650" y="550" font-family="sans-serif" font-size="22" font-weight="bold" fill="#000" text-anchor="middle">Consumers</text>
+</svg>
