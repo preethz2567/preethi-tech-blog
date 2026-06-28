@@ -73,11 +73,10 @@ If you'd like to run the tech blog locally:
 3. Install dependencies:
    ```bash
    npm install
-
-
-   Thankyou for visiting this repository!!
    ```
 4. Start the Vite development server:
    ```bash
    npm run dev
    ```
+
+   Thankyou for visiting this repository!!
